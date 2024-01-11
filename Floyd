@@ -1,0 +1,14 @@
+for(int i=0;i<n;i++)//n表示节点数量,i表示允许通过第i个节点时
+{
+	for(int j=0;j<n;j++)
+	{
+	if(j!=n)
+		{
+			for(int k=0;k<n;k++)
+			{
+				if(k!=n||j!=k)//这个和前面的if(j!=n)都是因为第i和第i列以及行列相等时是不会变的
+				edges[j][k]=min(edges[j][k],edges[j][i]+edges[i][k]);
+			}
+		}
+	}
+}
