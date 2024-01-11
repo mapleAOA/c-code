@@ -1,3 +1,4 @@
+//这个edges是邻边矩阵
 for(int i=0;i<n;i++)//n表示节点数量,i表示允许通过第i个节点时
 {
 	for(int j=0;j<n;j++)
